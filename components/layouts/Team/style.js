@@ -1,4 +1,4 @@
-const { default: styled } = require("styled-components");
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding: 150px 0;
