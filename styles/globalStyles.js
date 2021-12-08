@@ -96,6 +96,15 @@ const GlobalStyle = createGlobalStyle`
 
 
     /* margins */
+    .mt-64px {
+        margin-top: 64px;
+    }
+    .mb-64px {
+      margin-bottom: 64px;
+    }
+    .mt-50px {
+      margin-top: 50px;
+    }
 .mb-5px {
   margin-bottom: 5px;
 }
@@ -113,6 +122,9 @@ const GlobalStyle = createGlobalStyle`
 }
 .mb-30px {
   margin-bottom: clamp(18px, 2.0833333333333335vw, 30px);
+}
+.mb-32px{
+  margin-bottom: clamp(18px, 2.0833333333333335vw, 32px);
 }
 .mb-35px {
   margin-bottom: 35px;
@@ -132,6 +144,9 @@ const GlobalStyle = createGlobalStyle`
 .mb-60px {
   margin-bottom: clamp(40px, 4.166666666666667vw, 60px);
 }
+.mb-68px {
+  margin-bottom: clamp(40px, 4.166666666666667vw, 68px);
+}
 .mb-70px {
   margin-bottom: clamp(40px, 4.861111111111111vw, 70px);
 }
@@ -142,7 +157,7 @@ const GlobalStyle = createGlobalStyle`
   margin-bottom: 80px;
 }
 .mb-100px {
-  margin-bottom: clamp(40px, 6.944444444444445vw, 100px);
+  margin-bottom: clamp(64px, 6.944444444444445vw, 100px);
 }
 .mb-150px {
   margin-bottom: clamp(80px, 10.416666666666666vw, 150px);
@@ -152,6 +167,12 @@ const GlobalStyle = createGlobalStyle`
   margin: 0 auto;
 }
 
+
+@media (max-width: 575px) {
+  .ps-2 {
+    padding-left: 17px;
+  }
+}
 
 /* CONFIGURATIONS */
 .pointer{
@@ -163,20 +184,20 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  width: 80%;
-  max-width: 1700px;
-  margin-left: auto;
-  margin-right: auto;
+	width: 80%;
+	max-width: 1700px;
+	margin-left: auto;
+	margin-right: auto;
 
-  @media (max-width: 1000px) {
-    width: 90%;
-  }
+	@media (max-width: 1000px) {
+		width: 84%;
+	}
 `;
 
 export const PageContainer = styled.div`
-  @media (max-width: 500px) {
-    padding-bottom: 60px;
-  }
+	@media (max-width: 500px) {
+		padding-bottom: 60px;
+	}
 `;
 
 export default GlobalStyle;
